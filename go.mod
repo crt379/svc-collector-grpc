@@ -3,7 +3,7 @@ module github.com/crt379/svc-collector-grpc
 go 1.22.2
 
 require (
-	github.com/crt379/svc-collector-grpc-proto v0.0.19
+	github.com/crt379/svc-collector-grpc-proto v0.0.20
 	google.golang.org/grpc v1.64.0
 	google.golang.org/protobuf v1.34.1
 )
