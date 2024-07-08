@@ -1,0 +1,8 @@
+package code
+
+const (
+	SUCCESS = iota + 10000
+	PARAMTER_ERROR
+	SQL_EXEC_ERROR
+	INTERNAL_ERROR
+)

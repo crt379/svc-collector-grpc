@@ -1,0 +1,62 @@
+TZ = "Asia/Shanghai"
+
+[register]
+name = "svc-collector-grpc"
+
+[listen]
+host = ""
+port = "8080"
+
+[pgsql.write]
+host = "192.168.31.208"
+port = "5432"
+user = "postgres"
+password = "postgres"
+dbname = "service_collector"
+
+[pgsql.read]
+host = "192.168.31.206"
+port = "5432"
+user = "postgres"
+password = "postgres"
+dbname = "service_collector"
+
+[redis.write]
+host = "192.168.31.207"
+port = "6379"
+password = "123456"
+db = 0
+
+[redis.read]
+host = "192.168.31.210"
+port = "6379"
+password = "123456"
+db = 0
+
+[log]
+file = "service-collector.log"
+level = -1
+
+[log.redis]
+enabled = true
+host = "192.168.31.207"
+port = "6379"
+password = "123456"
+db = 0
+key = "service-collector_log"
+
+[[etcd]]
+host = "192.168.31.112"
+port = "2379"
+
+[[etcd]]
+host = "192.168.31.112"
+port = "12379"
+
+[[etcd]]
+host = "192.168.31.112"
+port = "22379"
+
+[prometheus]
+host = ""
+port = "8082"
